@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lxs.drawabletest.MainActivity">
+
+    <Button
+        android:id="@+id/btn_change_img1_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ChangeImg1Alpha"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_change_img1_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ChangeImg1Color "
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_goto_second_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GoToSecondActivity"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img1"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img1"/>
+    <Button
+        android:id="@+id/btn_goto_tint_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tint"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/btn_goto_tint_java"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TintJavaCode"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>
