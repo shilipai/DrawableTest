@@ -16,12 +16,15 @@ public class TintJavaCodeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tint_java_code);
         img1 = (ImageView) findViewById(R.id.img1);
         img2 = (ImageView) findViewById(R.id.img2);
+
         Drawable drawable = ContextCompat.getDrawable(this,R.drawable.icon);
-        Drawable.ConstantState state = drawable.getConstantState();
-        Drawable drawable1 = DrawableCompat.wrap(state == null ? drawable : state.newDrawable()).mutate();
-        drawable1.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
-        DrawableCompat.setTint(drawable,ContextCompat.getColor(this,R.color.colorAccent));
         img1.setImageDrawable(drawable);
+
+        Drawable.ConstantState state = drawable.getConstantState();
+
+        Drawable drawable1 = DrawableCompat.wrap(state == null ? drawable : state.newDrawable()).mutate();
+        DrawableCompat.setTint(drawable1,ContextCompat.getColor(this,R.color.colorAccent));
+
         img2.setImageDrawable(drawable1);
     }
 }
