@@ -17,7 +17,7 @@ public class TintJavaCodeActivity extends AppCompatActivity {
         img1 = (ImageView) findViewById(R.id.img1);
         img2 = (ImageView) findViewById(R.id.img2);
 
-        Drawable drawable = ContextCompat.getDrawable(this,R.drawable.icon);
+        Drawable drawable = ContextCompat.getDrawable(this,R.drawable.icon1);
         img1.setImageDrawable(drawable);
 
         Drawable.ConstantState state = drawable.getConstantState();

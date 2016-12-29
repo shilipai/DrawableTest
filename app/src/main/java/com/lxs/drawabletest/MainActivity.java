@@ -11,7 +11,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView img1, img2;
-    private Button btnGotoSecondActivity, btnChangeImg1Alpha, btnChangeImg1Color,btnGotoTintActivity,btnGotoTintJava;
+    private Button btnGotoSecondActivity, btnChangeImg1Alpha, btnChangeImg1Color,btnGotoTintActivity,btnGotoTintJava,btnGotoSelector;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btnGotoSecondActivity = (Button) findViewById(R.id.btn_goto_second_activity);
         btnGotoTintActivity = (Button) findViewById(R.id.btn_goto_tint_activity);
         btnGotoTintJava= (Button) findViewById(R.id.btn_goto_tint_java);
+        btnGotoSelector = (Button) findViewById(R.id.btn_goto_selector);
         btnChangeImg1Alpha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,6 +56,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,TintJavaCodeActivity.class));
+            }
+        });
+        btnGotoSelector.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,SelectorActivity.class));
             }
         });
     }

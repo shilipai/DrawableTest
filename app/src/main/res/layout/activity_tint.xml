@@ -10,14 +10,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:src="@drawable/icon"/>
+        android:src="@drawable/icon1"/>
 
     <ImageView
         android:id="@+id/image2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:src="@drawable/icon"
+        android:src="@drawable/icon1"
         android:tint="@color/colorAccent"/>
 
 </LinearLayout>

@@ -21,6 +21,8 @@
             android:label="tint"/>
         <activity android:name=".TintJavaCodeActivity">
         </activity>
+        <activity android:name=".SelectorActivity">
+        </activity>
     </application>
 
 </manifest>
